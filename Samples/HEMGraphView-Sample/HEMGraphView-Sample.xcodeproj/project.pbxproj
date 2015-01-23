@@ -12,6 +12,9 @@
 		AD543D061A72ACC0009163D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD543CFE1A72ACC0009163D9 /* LaunchScreen.xib */; };
 		AD543D071A72ACC0009163D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD543D001A72ACC0009163D9 /* Main.storyboard */; };
 		AD543D081A72ACC0009163D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD543D021A72ACC0009163D9 /* Images.xcassets */; };
+		AD543D0B1A72AEF0009163D9 /* HEMGraphsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AD543D0A1A72AEF0009163D9 /* HEMGraphsVC.m */; };
+		AD543D111A72AF17009163D9 /* HEMGraphPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = AD543D0E1A72AF17009163D9 /* HEMGraphPlot.m */; };
+		AD543D121A72AF17009163D9 /* HEMGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = AD543D101A72AF17009163D9 /* HEMGraphView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,12 @@
 		AD543CFF1A72ACC0009163D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		AD543D011A72ACC0009163D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD543D021A72ACC0009163D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD543D091A72AEF0009163D9 /* HEMGraphsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEMGraphsVC.h; sourceTree = "<group>"; };
+		AD543D0A1A72AEF0009163D9 /* HEMGraphsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEMGraphsVC.m; sourceTree = "<group>"; };
+		AD543D0D1A72AF17009163D9 /* HEMGraphPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEMGraphPlot.h; sourceTree = "<group>"; };
+		AD543D0E1A72AF17009163D9 /* HEMGraphPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEMGraphPlot.m; sourceTree = "<group>"; };
+		AD543D0F1A72AF17009163D9 /* HEMGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HEMGraphView.h; sourceTree = "<group>"; };
+		AD543D101A72AF17009163D9 /* HEMGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HEMGraphView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 				AD543CF61A72ACC0009163D9 /* AppDelegate */,
 				AD543CFA1A72ACC0009163D9 /* Supporting Files */,
 				AD543CFD1A72ACC0009163D9 /* UI */,
+				AD543D131A72AF22009163D9 /* Util */,
 			);
 			path = "HEMGraphView-Sample";
 			sourceTree = "<group>";
@@ -75,6 +85,8 @@
 		AD543CF91A72ACC0009163D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				AD543D091A72AEF0009163D9 /* HEMGraphsVC.h */,
+				AD543D0A1A72AEF0009163D9 /* HEMGraphsVC.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -96,6 +108,26 @@
 				AD543D021A72ACC0009163D9 /* Images.xcassets */,
 			);
 			path = UI;
+			sourceTree = "<group>";
+		};
+		AD543D0C1A72AF17009163D9 /* HEMGraphView */ = {
+			isa = PBXGroup;
+			children = (
+				AD543D0D1A72AF17009163D9 /* HEMGraphPlot.h */,
+				AD543D0E1A72AF17009163D9 /* HEMGraphPlot.m */,
+				AD543D0F1A72AF17009163D9 /* HEMGraphView.h */,
+				AD543D101A72AF17009163D9 /* HEMGraphView.m */,
+			);
+			name = HEMGraphView;
+			path = ../../../HEMGraphView;
+			sourceTree = "<group>";
+		};
+		AD543D131A72AF22009163D9 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				AD543D0C1A72AF17009163D9 /* HEMGraphView */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,8 +200,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD543D111A72AF17009163D9 /* HEMGraphPlot.m in Sources */,
+				AD543D0B1A72AEF0009163D9 /* HEMGraphsVC.m in Sources */,
 				AD543D051A72ACC0009163D9 /* main.m in Sources */,
 				AD543D031A72ACC0009163D9 /* HEMAppDelegate.m in Sources */,
+				AD543D121A72AF17009163D9 /* HEMGraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
